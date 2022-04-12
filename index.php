@@ -44,6 +44,27 @@
         </div>
     </div>
     </div>
+    <br />
+    <div class="row justify-content-center row-cols-1 row-cols-md-2 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>&nbsp;&nbsp;<b>Pesquisa</b></h4>
+                </div>
+                <div class="card-body text-start">
+                    <form action="pesquisa.php" method="POST">
+                        <label class="form-label">Nome</label><br />
+                        <input type="text" name="pesquisa" class="form-control" placeholder="Digite um nome para pesquisar" required /><br />
+                        <button type="submit" class="btn btn-outline-secondary" name="btgravar">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br />
     <div class="row justify-content-center row-cols-1 row-cols-md-2 mb-3 text-center">
         <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
@@ -75,7 +96,7 @@
                                 echo '<td>' . $dados[$i] . '</td>';
                                 $i++;
                                 echo '<td>' . $dados[$i] . '</td>';
-                                echo '<td><a href="editar.php?pos='.$posicao.'">Editar</a> | <a href="excluir.php?pos=' . $posicao . '">Excluir</a></td>';
+                                echo '<td><a href="editar.php?pos=' . $posicao . '">Editar</a> | <a href="excluir.php?pos=' . $posicao . '">Excluir</a></td>';
                                 echo '</tr>';
                             }
                             ?>
