@@ -1,1 +1,1 @@
-Elieth Camargo;44;Ana Julia;18;Emerson Camargo;22;Maria;33;Jó;66;
+Elieth;11;Ana Julia;18;Emerson Camargo;22;

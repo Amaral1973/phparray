@@ -75,7 +75,7 @@
                                 echo '<td>' . $dados[$i] . '</td>';
                                 $i++;
                                 echo '<td>' . $dados[$i] . '</td>';
-                                echo '<td>Editar | <a href="excluir.php?pos=' . $posicao . '">Excluir</a></td>';
+                                echo '<td><a href="editar.php?pos='.$posicao.'">Editar</a> | <a href="excluir.php?pos=' . $posicao . '">Excluir</a></td>';
                                 echo '</tr>';
                             }
                             ?>
